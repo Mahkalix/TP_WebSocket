@@ -65,7 +65,7 @@ TP_Websocket/
 - Comprendre le fonctionnement des WebSockets
 - Implémenter une communication bidirectionnelle en temps réel
 - Découpler l'envoi et la réception de messages
-- Mettre en place une architecture distribuée simple
+- Mettre en place une architecture distribuée simple et fonctionnelle
 
 ## 👨‍💻 Développement
 
