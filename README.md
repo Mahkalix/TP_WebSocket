@@ -56,7 +56,7 @@ TP_Websocket/
 │   └── ...
 ├── backend/    # Serveur WebSocket (à créer)
 │   └── ...
-└── front_receiver/        # Application front-end pour la réception (à créer)
+└── frontReceiver/        # Application front-end pour la réception (à créer)
     └── ...
 ```
 
@@ -66,15 +66,6 @@ TP_Websocket/
 - Implémenter une communication bidirectionnelle en temps réel
 - Découpler l'envoi et la réception de messages
 - Mettre en place une architecture distribuée simple
-
-## 📝 TODO
-
-- [ ] Créer l'API Backend (REST)
-- [ ] Créer le Backend WebSocket
-- [ ] Créer le Front Receiver
-- [ ] Implémenter la logique de communication
-- [ ] Ajouter la gestion des erreurs
-- [ ] Ajouter des logs pour le débogage
 
 ## 👨‍💻 Développement
 
