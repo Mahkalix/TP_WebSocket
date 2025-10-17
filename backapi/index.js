@@ -9,7 +9,6 @@ const PORT = 3000;
 const app = express();
 const server = http.createServer(app);
 
-// CORS middleware
 app.use(
     cors({
         origin: "*",
@@ -18,15 +17,11 @@ app.use(
     })
 );
 
-// Websocket
-// Utilisation d'un singleton pour pouvoir le partager
 ChatSocket.INSTANCE.setup(server);
 
-// Front-App
 app.use(express.static("../front/dist"));
 app.use(express.json());
 
-// Route par défaut
 app.get("/", (req, res) => {
     res.send(`
     <h1>Chat App API</h1>
@@ -42,7 +37,6 @@ app.get("/", (req, res) => {
 app.get("/api/whoami", WhoIAmController.get);
 app.post("/api/chat", ChatController.post);
 
-// Ecoute de l'API et de la websocket
 server.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });

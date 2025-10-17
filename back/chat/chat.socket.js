@@ -1,10 +1,10 @@
 import { Server } from "socket.io";
 
 export class ChatSocket {
-    static INSTANCE = new ChatSocket(); // DP singleton
+    static INSTANCE = new ChatSocket();
     static OUT = "message";
     static IN = "message";
-    static CORS = { origin: "*" }; // ⚠️ à restreindre en production
+    static CORS = { origin: "*" };
 
     io;
 

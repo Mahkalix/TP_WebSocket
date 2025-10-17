@@ -1,14 +1,14 @@
 const { Server } = require("socket.io");
 
 class ChatSocket {
-    static INSTANCE = new ChatSocket(); // DP singleton
+    static INSTANCE = new ChatSocket();
     static OUT = "message";
     static IN = "message";
     static CORS = {
         origin: "*",
         methods: ["GET", "POST"],
         credentials: true,
-    }; // à restreindre en production
+    };
 
     io;
 
